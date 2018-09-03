@@ -1,0 +1,10 @@
+---
+applications:
+- name: URL_Generator
+  memory: 1GB
+  instances: 1
+  random-route: true
+env:
+    HTTP_PROXY: http://shruthi_g3:Gopal$1952@proxy.ins.dell.com:80
+    HTTPS_PROXY: https://shruthi_g3:Gopal$1952@proxy.ins.dell.com:80
+    

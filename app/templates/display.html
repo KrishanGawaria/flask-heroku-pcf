@@ -1,0 +1,201 @@
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" />
+    <link href="../static/jquery.multiselect.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="../static/jquery.multiselect.js"></script>
+</head>
+<body>
+<div id="wrapper">
+                <div class="row">
+                    <div class="col-lg-12">
+                            <div class="panel-body">
+					            <h3 class="page-header">URL Generator</h3>
+                            </div>
+                    </div>
+                 </div>
+				
+			
+				<div class="panel-body">
+								<form action = "/" method = "post" id="usrform">
+									<fieldset>
+									
+									
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>Select Environment</label>
+                                                  <select class="form-control" title="Select" id="layerSelect" name="layer">
+                                                    <option value="wip"> WIP </option>
+													 <option value="production"> Production </option>
+                                                  </select>
+                                            </div>
+                                        </div>
+										
+				
+												
+										
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                            		<label>Select Country</label>
+                                            	<select name="basic[]" multiple="multiple" class="3col active">
+        <option value="ie">ie Ireland</option>
+														<option value="de">de Germany</option>
+														<option value="at">at Austria</option>
+														<option value="fr">fr France</option>
+														<option value="it">it Italy</option>
+														<option value="es">es Spain</option>
+														<option value="ch">ch Swiss</option>
+														
+														<option value="no">no Norway</option>
+														<option value="se">se Sweden</option>
+														<option value="dk">dk Denmark</option>
+														<option value="be">be Belgium</option>
+														
+														<option value="nl">nl Netherland</option>
+														<option value="ar">ar Arabic</option>
+														<option value="cz">cz Czech Republic</option>
+														<option value="fi">fi Finland</option>
+														<option value="gr">gr Greece</option>
+														<option value="ru">ru Russsia</option>
+														<option value="pt">pt Portugal</option>
+														<option value="il">il Israel</option>
+														<option value="tr">tr Turkey</option>
+														<option value="hu">hu Hungary</option>
+														<option value="ro">ro Romania</option>
+														<option value="ma">ma Morocco - FR</option>
+														
+														<option value="tn">tn Tunisia</option>
+													
+														<option value="dz">dz Algeria</option>
+														
+														<option value="ua">ua Ukarine</option>
+														<option value="cg">cg Congo</option>
+														<option value="sn">sn Senegal</option>
+														<option value="ga">ga Gabon</option>
+														<option value="ba">ba Bosnia</option>
+														<option value="bg">bg Bulgaria</option>
+														<option value="ee">ee Estonia</option>
+														<option value="hr">hr Croatia</option>
+														<option value="is">is Iceland</option>
+														<option value="lv">lv Lithuania</option>
+														<option value="lt">lt Latvia</option>
+														<option value="si">si Slovenia</option>
+														<option value="yo">yo Serbia</option><!-- yo-->
+														
+														<option value="ng">ng Nigeria</option>
+														<option value="al">al Albania</option>
+														<option value="ly">ly Libya</option>
+														<option value="gh">gh Ghana</option>
+														<option value="mk">mk Macedonia</option>
+														<option value="za">za South Africa</option>
+														<option value="rs">rs CIS</option>
+														<option value="lu">lu Luxemberg</option>
+														<option value="cd">cd DRC</option>
+														<option value="ed">ed Eastern-europe</option>
+														<option value="sk">sk Slovokia</option>
+														<option value="pl">pl Poland</option>
+														<option value="jp">jp Japan</option>
+														<option value="kr">kr Korea</option>
+														<option value="cn">cn China</option>
+													
+														<option value="tw">tw Taiwan</option>
+														<option value="au">au Australia</option>
+														<option value="nz">nz Newzealand</option>
+														<option value="in">in India</option>
+														<option value="pk">pk Pakistan</option>
+														<option value="th">th Thailand</option>
+														<option value="vn">vn Vietnam</option>
+														<option value="ph">ph Philiphines</option>
+														<option value="id">id Indonesia</option>
+														
+														<option value="hk">hk Hongkong</option>
+														<option value="sg">sg Singapore</option>
+														<option value="my">my Malaysia</option>
+														<option value="mx">mx Mexico</option>
+														<option value="br">br Brazil</option>
+														<option value="pa">pa Panama</option>
+														<option value="ar">ar Argentina</option>
+														<option value="cl">cl Chile</option>
+														<option value="co">co Colombia</option>
+														<option value="pe">pe Peru</option>
+														<option value="ve">ve Venezuela</option>
+														<option value="pr">pr Puerto Rico</option>
+														
+														<option value="cr">cr Costa Rica</option>
+														<option value="ai">ai Anguilla</option>
+														<option value="ag">ag Antigua & Barbuda</option>
+														<option value="an">an Netherlands Antilles/Curacao</option>
+														<option value="aw">aw Aruba</option>
+														<option value="bs">bs Bahamas</option>
+														<option value="bb">bb Barbados</option>
+														<option value="bz">bz Belize</option>
+														<option value="bm">bm Bermudas</option>
+														<option value="bo">bo Bolivia</option>
+														<option value="vg">vg British Virgin Islands</option>
+														<option value="ky">ky Cayman Islands</option>
+														<option value="dm">dm Dominica</option>
+														<option value="do">do Republica Dominicana</option>
+														<option value="ec">ec Ecuador</option>
+														<option value="sv">sv El Salvador</option>
+														<option value="gd">gd Grenada</option>
+														<option value="gt">gt Guatemala</option>
+														<option value="gy">gy Guyana</option>
+														<option value="ht">ht Haiti</option>
+														<option value="hn">hn Honduras</option>
+														<option value="jn">jn Jamaica</option>
+														<option value="ni">ni Nicaragua</option>
+														<option value="pa">pa Panama</option>
+														<option value="py">py Paraguay</option>
+														<option value="kn">kn St. Kitts & Nevis</option>
+														<option value="lc">lc Santa Lucia</option>
+														<option value="vc">vc St. Vincent & Grenadines</option>
+														<option value="sr">sr Surinam</option>
+														<option value="tt">tt Trinidad & Tobago</option>
+														<option value="tc">tc Turks & Caicos Islands</option>
+														<option value="uy">uy Uruguay</option>
+														<option value="vi">vi US Virgin Islands</option>
+														
+    </select>
+												
+											</div>
+										</div>
+										
+										
+										
+										
+										
+										
+										<div class="form-group">
+
+											<textarea id="taURLs" class="form-control" placeholder="Enter URL's" rows="15" cols="50" name="oclist" form="usrform" autofocus></textarea>
+										</div>
+
+                                        <div class="col-md-2">
+										<!-- Change this to a button or input when using this as a form -->
+										    <p><input id="btSubmit" type = "button" value = "Open Tabs" class="btn btn-lg btn-primary btn-block"/></p>
+                                        </div>
+								</fieldset>
+								</form>
+							</div>
+						</div>
+
+
+<script>
+    $(function () {
+        $('select[multiple].active.3col').multiselect({
+            columns: 3,
+            placeholder: 'Select States',
+            search: true,
+            searchOptions: {
+                'default': 'Search States'
+            },
+            selectAll: true
+        });
+
+    });
+</script>														
+<script type="text/javascript" src="../static/app.js"></script>									
+</body>
+</html>
