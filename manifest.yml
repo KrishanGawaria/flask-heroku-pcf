@@ -1,7 +1,8 @@
 ---
 applications:
-- name: url-generator
+- name: urlgenerator
   memory: 1GB
   instances: 1
+
 
     
