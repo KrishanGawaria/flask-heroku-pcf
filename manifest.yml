@@ -1,9 +1,7 @@
 ---
 applications:
-- name: URL_Generator
+- name: url-generator
   memory: 1GB
   instances: 1
-  random-route: true
-env:
-    HTTP_PROXY: http://api.run.pivotal.io:80
-    HTTPS_PROXY: https://api.run.pivotal.io:80
+
+    
