@@ -261,6 +261,12 @@ var data = [
 	
 	[{"cn": "ed"}, {"ln": "en"}],
 	
+	[{"cn": "pk"}, {"ln": "en"}],
+	[{"cn": "id"}, {"ln": "en"}],
+	[{"cn": "ph"}, {"ln": "en"}],
+	[{"cn": "vn"}, {"ln": "en"}],
+	[{"cn": "yu"}, {"ln": "en"}],
+	
 	[{"cn": "gp"}, {"ln": "en"}],
 	
 	[{"cn": "ly"}, {"ln": "en"}],
@@ -403,9 +409,7 @@ button.addEventListener("click", function(event){
 						var finalURL = part1 + part2 + part3
 						finalOutputURLs.push(finalURL)
 					}
-				})
-
-				
+				})				
 			})
 		})
 	}

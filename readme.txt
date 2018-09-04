@@ -1,1 +1,0 @@
-This app can be deployed on pcf as well as heroku

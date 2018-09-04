@@ -305,9 +305,10 @@
             }
 
             // add global select all options
-            if( instance.options.selectAll ) {
-                optionsList.before('<a href="#" class="ms-selectall global">' + instance.options.texts.selectAll + '</a>');
-            }
+            // We don't need the opion of 'select all'
+            // if( instance.options.selectAll ) {
+            //     optionsList.before('<a href="#" class="ms-selectall global">' + instance.options.texts.selectAll + '</a>');
+            // }
 
             // handle select all option
             optionsWrap.on('click', '.ms-selectall', function( event ){
